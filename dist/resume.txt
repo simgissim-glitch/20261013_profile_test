@@ -1,0 +1,11 @@
+개인 포트폴리오 — 예시 이력서
+
+이 문서는 샘플입니다. 실제 개인정보와 경력으로 교체해 주세요.
+
+이름: 정지훈 (예시)
+직무: Product Designer & Engineer (예시)
+이메일: jihun.design.dev@example.com (예시)
+지역: 서울 / 원격 근무 가능 (예시)
+
+소개: 사용자 경험과 기술을 연결하는 디지털 제품을 만듭니다.
+예시 프로젝트: FinFlow, Sphere, Nova UI

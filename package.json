@@ -1,0 +1,9 @@
+{
+  "name": "personal-profile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "node server.cjs"
+  }
+}

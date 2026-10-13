@@ -1,0 +1,43 @@
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { margin: 0; line-height: 1.6; word-break: keep-all; overflow-wrap: anywhere; }
+*, *::before, *::after { box-sizing: border-box; }
+h1, h2, h3 { text-wrap: pretty; }
+h1 { font-size: clamp(36px, 4vw, 56px) !important; line-height: 1.25 !important; }
+section { scroll-margin-top: 20px; }
+.grid > *, .flex > * { min-width: 0; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #2563eb; outline-offset: 5px; }
+nav a { padding: 7px 12px; border-radius: 8px; white-space: nowrap; font-size: 14px; font-weight: 600; }
+nav a[aria-current] { background: #2563eb; color: #fff; }
+nav a:not([aria-current]) { background: transparent; color: #434655; }
+.example-notice { font-size: 12px; color: #434655; }
+.menu-toggle { display: none; border-radius: 8px; background: #eceef0; width: 44px; height: 44px; font-size: 24px; }
+.skip-link { position: fixed; top: -100px; left: 20px; z-index: 100; padding: 12px 20px; background: #fff; color: #004ac6; }
+.skip-link:focus { top: 12px; }
+.project-card { position: relative; }
+.project-link::after { content: ''; position: absolute; inset: 0; z-index: 20; }
+.project-card a:not(.project-link) { position: relative; z-index: 21; }
+.project-card:focus-within { outline: 3px solid #2563eb; outline-offset: 5px; }
+.project-card:hover { transform: translateY(-4px); }
+#emailText { overflow-wrap: anywhere; word-break: break-word; }
+#emailText:hover { color: #004ac6; text-decoration: underline; }
+textarea { resize: vertical !important; }
+@media (max-width: 767px) {
+  .menu-toggle { display: block; margin-left: auto; margin-right: 12px; }
+  #main-nav { display: flex; position: absolute; top: 80px; left: 0; right: 0; background: #fff; padding: 12px 20px; box-shadow: 0 8px 12px #191c1e0d; justify-content: center; gap: 4px; }
+  .js #main-nav:not(.is-open) { display: none; }
+  body:not(.js) main { padding-top: 136px; }
+  h2 { font-size: 30px !important; line-height: 1.35 !important; }
+  #home, #projects { padding-top: 56px; padding-bottom: 56px; }
+  #about, #contact { padding-top: 56px; padding-bottom: 56px; }
+  #home .grid-cols-3 { gap: 10px; }
+  #home .grid-cols-3 > div { padding: 16px 10px; }
+  #home .text-headline-xl { font-size: 32px; }
+  #home .aspect-square { width: min(100%, 384px); }
+  #contact form + *, #contact .lg\:p-10 { padding: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
